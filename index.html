@@ -1,1 +1,30 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership & Staff</title>
+  <style>
+    
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="leadership">
+    <h2>Leadership & Staff</h2>
+    <div class="staff-grid" id="staffGrid"></div>
+  </section>
+
+  <div id="overlay" onclick="closePanel()"></div>
+  <div id="panel">
+    <button onclick="closePanel()">&times;</button>
+    <img id="panelPhoto" src="" alt="Staff Photo">
+    <h3 id="panelName"></h3>
+    <p id="panelRole" class="role"></p>
+    <p id="panelBio" class="bio"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
