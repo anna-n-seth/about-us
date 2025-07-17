@@ -1,4 +1,5 @@
-   body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+    body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background-color: #0A0A0A;
@@ -13,9 +14,12 @@
 
     .leadership h2 {
       font-size: 2.5rem;
-      font-weight: bold;
+      font-weight: 800;
       text-align: center;
       margin-bottom: 3rem;
+      background: white;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .staff-grid {
@@ -31,12 +35,12 @@
       border-radius: 1rem;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
       cursor: pointer;
-      transition: transform 0.3s ease;
-      position: relative;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
 
     .staff-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(59, 130, 246, 0.3);
     }
 
     .staff-card img {
@@ -45,6 +49,11 @@
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .staff-card:hover img {
+      transform: scale(1.05) rotate(1deg);
     }
 
     .staff-card h3 {
@@ -57,19 +66,70 @@
       color: #ccc;
     }
 
-    .bio {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s ease, opacity 0.5s ease;
-      opacity: 0;
-      text-align: left;
-      margin-top: 1rem;
-      color: #ddd;
-      font-size: 0.95rem;
-      line-height: 1.6;
+    /* Modal overlay */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      padding: 1rem;
+      box-sizing: border-box;
     }
 
-    .staff-card.open .bio {
-      max-height: 800px;
-      opacity: 1;
+    .modal-content {
+      background: #111;
+      padding: 2rem;
+      border-radius: 1rem;
+      width: 100%;
+      max-width: 600px;
+      max-height: 80vh;
+      overflow-y: auto;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+
+    .modal-content img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    .modal-content h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .modal-content p.role {
+      text-align: center;
+      color: #aaa;
+      margin-bottom: 1rem;
+    }
+
+    .modal-content .bio-text {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.75rem;
+      font-size: 1.75rem;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      line-height: 1;
+      z-index: 1000;
     }
