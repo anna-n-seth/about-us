@@ -100,12 +100,9 @@ const staffMembers = [
   document.getElementById("modalBio").textContent = member.bio;
   const modal = document.getElementById("modal");
   modal.style.display = "flex";
-
-  // Only scroll into view on wider screens (desktop)
-  if (window.innerWidth > 768) {
-    modal.scrollIntoView({ behavior: "smooth", block: "center" });
-  }
+  modal.scrollIntoView({ behavior: "smooth", block: "center" });
 }
+
 
 
     function closeModal() {
