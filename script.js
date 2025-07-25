@@ -25,7 +25,7 @@ const staffMembers = [
       },
       {
     name: "Luke Hannay",
-    role: "Youth Pastor",
+    role: "Youth Ministry Director",
     img: "https://firebasestorage.googleapis.com/v0/b/hbc-website-8b832.firebasestorage.app/o/Staff%2FLuke_f5kewb.jpg?alt=media&token=939723fc-80c8-4a0a-9412-477d99397e33",
     bio: "Luke has been the Youth Director of Highland Baptist Church since 2023. He loves working with students and talking about his faith. He and his wife Sarah enjoy weightlifting, hiking, the beach, baking, and spending time with people."
   },
@@ -37,19 +37,19 @@ const staffMembers = [
   },
   {
     name: "Danielle Benz",
-    role: "Kids@hbc Coordinator",
+    role: "Women’s Ministry Director",
     img: "https://firebasestorage.googleapis.com/v0/b/hbc-website-8b832.firebasestorage.app/o/Staff%2Fdanielle_s0acj4.jpg?alt=media&token=94403423-c934-42b4-b01f-2370890c958d",
     bio: "Danielle is new to the hbc staff, but not to ministry. She loves serving the women of hbc by providing places to learn, grow, and study God’s word. She is passionate about mentorship and connecting women in meaningful ways."
   },
   {
     name: "Kristin Kuhlman",
-    role: "Admin Assistant",
+    role: "Connections Director",
     img: "https://firebasestorage.googleapis.com/v0/b/hbc-website-8b832.firebasestorage.app/o/Staff%2Fkristin_ovllff.jpg?alt=media&token=11fa611d-0f8d-455b-8f1a-52b27e80c70e",
     bio: "Kristin has called Redmond home since 2005 and joined the hbc team in January 2020. She has partnered with her husband and best friend, Michael, in ministry the past 30 years. Kristin is an outgoing people person who loves meeting new people on Sunday mornings and is passionate about helping them feel warmly welcomed and find connection at hbc. She also enjoys spending time with her husband, adult children, and grandchildren any chance she gets!"
   },
   {
     name: "Jesse Cole",
-    role: "Tech",
+    role: "Tech Director",
     img: "https://firebasestorage.googleapis.com/v0/b/hbc-website-8b832.firebasestorage.app/o/Staff%2Fjesse_qssmse.jpg?alt=media&token=3f015718-234c-491c-a9f7-d5d3164be42b",
     bio: "Jesse loves his family and everything music-related. He likes being outdoors, reading books, and diving deep into theology. He is passionate about seeking to learn and grow as God leads him."
   },
